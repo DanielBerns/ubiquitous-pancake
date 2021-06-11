@@ -4,7 +4,7 @@ from flask import Flask
 
 def create_app(test_config=None):
     # create and configure the app
-    root = Path('~', '.bravo').expanduser()
+    root = Path('~', '.flaskr').expanduser()
     root.mkdir(mode=0o700, parents=True, exist_ok=True)
     app = Flask(__name__, 
                 instance_path=str(root), 
